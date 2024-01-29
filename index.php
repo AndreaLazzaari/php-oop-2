@@ -13,9 +13,9 @@ $leash = new Product('Vegan Leash', 'Vegan leash that you can use for your pets 
 $littleBell = new Product('Little Brass Bell', 'A little brass bell specifically designed for beautiful cats', 8.99, 'https://www.petsy.online/cdn/shop/products/Untitleddesign-2020-06-13T185635.426.png?v=1592054802', true, 36, $catsCategory);
 
 
-$chickenBits = new Cibo('Chicken bits', 'Chicken bits full of proteins', 6.99, 'https://shop-cdn-m.mediazs.com/bilder/trixie/premio/chicken/filet/bites/1/800/62415_pla_trixie_premio_chicken_filet_bites_50g_1.jpg', true, 111, $catsCategory, true, false);
+$crocchetteAlPollo = new Cibo('Crocchette al pollo', 'Crocchette al pollo, un ottimo cibo per far star al meglio il tuo gatto', 6.99, 'https://content.dambros.it/uploads/2023/01/13142205/0000068948.png', true, 111, $catsCategory, true, false);
 
-$cowBone = new Cibo('Cow bone', 'A big heavy cow bone for big dogs', 15.99, 'https://m.media-amazon.com/images/I/81qqv7HrSeL._AC_SL1500_.jpg', true, 6, $dogsCategory, false, true);
+$dolceCanino = new Cibo('Dolce Canino', 'Un ottimo modo per far concludere il pasto al tuo fidato amico a 4 zampe', 15.99, 'https://www.carrefour.it/on/demandware.static/-/Sites-carrefour-master-catalog-IT/default/dw138d25d6/large/GELATINAMANZOPEDIGREE-5900951015830-1.png', true, 6, $dogsCategory, false, true);
 
 $frisbee = new Giochi('Frisbee', 'A wonderful pink frisbee, water resistant', 22.02, 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRjsOQR7G7HpgO-vY57gVvykDW22Jw1l6fDZw&usqp=CAU', true, 10, $dogsCategory, 'Plastic full of petrol');
 
@@ -26,7 +26,7 @@ $chiuauaKennel = new Cucce('Chiuaua Kennel', 'A kennel for annoying dogs', 80.99
 $shepherdKennel = new Cucce('Shepherd Kennel', 'A kennel for watching dogs', 199.99, 'https://i.etsystatic.com/7583922/r/il/7ef73f/1059263558/il_794xN.1059263558_qhur.jpg', true, 2, $dogsCategory, 'huge');
 
 $products = [
-    $leash, $littleBell, $chickenBits, $cowBone, $frisbee, $veganClew, $chiuauaKennel, $shepherdKennel
+    $leash, $littleBell, $crocchetteAlPollo, $dolceCanino, $frisbee, $veganClew, $chiuauaKennel, $shepherdKennel
 ];
 
 
@@ -70,8 +70,6 @@ $products = [
                             <p class="card-text">
                                 <?php echo $product->description; ?>
                             </p>
-
-
                                 <p>
                                     Caratteristiche:
                                     <ul>
@@ -88,7 +86,6 @@ $products = [
                                     </ul>
                                     <br>
                                 </p>
-                            
                             <a href="#" class="btn btn-primary">
                                 Acquista per soli <?php echo $product->price; ?>&euro;
                             </a>
